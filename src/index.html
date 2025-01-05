@@ -1,16 +1,92 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/output.css">
-  <title>Document</title>
-</head>
-<body>
-  <h1 class="font-bold text-2xl">◆ original</h1>
-  <h2 class="">text-8xl text-blue-700</h2>
-  <br>
-  <h1 class="font-bold text-2xl">◆ TailwindCSS</h1>
-  <h2 class="text-8xl text-blue-700">text-8xl text-blue-700</h2>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/userstyle.css" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <title>Document</title>
+  </head>
+  <body >
+    <header id="header-area">
+      <div id="title-area">
+        <h1 id="title"><span>LOGO</span></h1>
+        <p id="sub-title">Tailwind CSS test space</p>
+      </div>
+      <nav id="nav-area">
+        <ul id="nav-list">
+          <li class="nav-item"><a href="">Nav</a></li>
+          <li class="nav-item"><a href="">Nav</a></li>
+          <li class="nav-item"><a href="">Nav</a></li>
+          <li class="nav-item"><a href="">Nav</a></li>
+          <li class="nav-item"><a href="">Nav</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h2>*Sample</h2>
+      <div class="summary">Tailwind CSS test space</div>
+      <div class="try">sssssssssss</div>
+    </section>
+    <section>
+      <h2>Color</h2>
+      <div class="summary">Backgroud: bg-****-xxx, bg-[xxxxxx]</div>
+      <div class="try">
+        <div class="bg-red-100">bg-red-100</div>
+        <div class="bg-red-300">bg-red-300</div>
+        <div class="bg-red-500">bg-red-500</div>
+        <div class="bg-red-700">bg-red-700</div>
+        <div class="bg-red-900">bg-red-900</div>
+        <div c>---</div>
+        <div class="bg-[#1da1f2]">bg-[#1da1f2]</div>
+      </div>
+      <div class="try bg-slate-300">
+        <div class="bg-red-700/100">bg-red-700/100</div>
+        <p class=>&nbsp➡&nbsp</p>
+        <div class="bg-red-700/70">bg-red-700/70</div>
+        <p class=>&nbsp➡&nbsp</p>
+        <div class="bg-red-700/40">bg-red-700/40</div>
+        <p class=>&nbsp➡&nbsp</p>
+        <div class="bg-red-700/10">bg-red-700/10</div>
+        <p class=>&nbsp||&nbsp</p>
+        <div class="bg-red-700/[0.5]">bg-red-700/[0.5] = 50%</div>
+      </div>
+      <div class="summary">Backgroud Grdient: bg-gradient-to-t/tr/tl/b/br/bl/r/l from-color1 (from-xx%) via-color2 (via-xx%) to-color3 (to-xx%)</div>
+      <div class="try flex-col">
+        <div class="bg-gradient-to-r from-red-600 to-blue-500">bg-gradient-to-r from-red-600 to-blue-500</div>
+        <div class="bg-gradient-to-l from-red-600 to-blue-500">bg-gradient-to-l from-red-600 to-blue-500</div>
+        <div class="bg-gradient-to-r from-red-600 via-indigo-500 to-blue-200">bg-gradient-to-r from-red-600 via-indigo-500 to-blue-200</div>
+        <div class="bg-gradient-to-r from-red-600 from-60% via-indigo-500 via-70% to-blue-200 to-80%">bg-gradient-to-r from-red-600 from-60% via-indigo-500 via-70% to-blue-200 to-80%</div>
+      </div>
+      <div class="summary">Text: color-****-xxx, color-[xxxxx]</div>
+      <div class="try">
+        <p class="text-red-500">text-red-500</p>&nbsp
+        <p class="text-blue-500">text-blue-500</p>&nbsp
+        <p class="text-[#217622]">text-[#ffdd22]</p>&nbsp
+      </div>
+      <div class="try bg-slate-300">
+        <p class="text-red-500/100">text-red-50/100</p>&nbsp
+        <p class=>&nbsp➡&nbsp</p>
+        <p class="text-red-500/70">text-red-500/70</p>&nbsp
+        <p class=>&nbsp➡&nbsp</p>
+        <p class="text-red-500/40">text-red-500/40</p>&nbsp
+        <p class=>&nbsp➡&nbsp</p>
+        <p class="text-red-500/10">text-red-500/10</p>&nbsp
+        <p class=>&nbsp||&nbsp</p>
+        <p class="text-red-500/[0.5]">text-red-500/[0.5] = 50%</p>&nbsp
+      </div>
+      <div class="summary">Shadow: </div>
+      <div class="try">
+        <button class="bg-green-400 rounded-[4px] shadow-md shadow-cyan-600/50">shadow-md shadow-cyan-600/50</button>&nbsp
+        <button class="bg-green-400 rounded-[4px] shadow-md shadow-cyan-600/50">shadow-md shadow-cyan-600/50</button>&nbsp
+      </div>
+      <div class="summary">Border/Outline/Ring: </div>
+      <div class="try">
+        <div class="border border-red-500" >border border-red-500</div>&nbsp   
+        <div class="border border-red-500 outline outline-blue-400">border border-red-500 outline outline-blue-400</div>&nbsp&nbsp
+        <div class="border border-red-500 ring ring-amber-600/50 ring-offset-4 ring-offset-blue-400/100">border border-red-500 ring ring-amber-600/50 ring-offset-4 ring-offset-blue-400/100</div>
+      </div>
+    </section>
+
+  </body>
 </html>
